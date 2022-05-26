@@ -13,7 +13,7 @@
         android:layout_weight="1"
         android:text="@string/dbsEN"
         android:gravity="center"
-
+        android:textSize="48dp"
         android:textColor="@color/black"/>
 
     <TextView
@@ -23,6 +23,7 @@
         android:layout_weight="1"
         android:text="@string/ocbcEN"
         android:gravity="center"
+        android:textSize="48dp"
         android:textColor="@color/black"/>
 
     <TextView
@@ -32,6 +33,7 @@
         android:layout_weight="1"
         android:text="@string/uobEN"
         android:gravity="center"
+        android:textSize="48dp"
         android:textColor="@color/black"/>
 
 
