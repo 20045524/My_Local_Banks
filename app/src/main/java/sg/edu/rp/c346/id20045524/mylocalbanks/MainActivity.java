@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        if(wordclicked.equalsIgnoreCase(getString(R.string.dbsEN))){
+        if(wordclicked.equalsIgnoreCase("dbs")){
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.dbsweb)));
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;  //menu item successfully handled
             }
-        } else if (wordclicked.equalsIgnoreCase(getString(R.string.ocbcEN))) {
+        } else if (wordclicked.equalsIgnoreCase("ocbc")) {
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.ocbcweb)));
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;  //menu item successfully handled
             }
-        } else if (wordclicked.equalsIgnoreCase(getString(R.string.uobEN))) {
+        } else if (wordclicked.equalsIgnoreCase("uob")) {
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.uobweb)));
