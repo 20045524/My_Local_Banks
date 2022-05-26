@@ -55,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.EnglishSelection) {
-            tvDBS.setText("DBS");
-            tvOCBC.setText("OCBC");
-            tvUOB.setText("UOB");
+            tvDBS.setText(getString(R.string.dbsEN));
+            tvOCBC.setText(getString(R.string.ocbcEN));
+            tvUOB.setText(getString(R.string.uobEN));
             return true;
         } else if (id == R.id.ChineseSelection) {
-            tvDBS.setText("星展银行");
-            tvOCBC.setText("华侨银行");
-            tvUOB.setText("大华银行");
+            tvDBS.setText(getString(R.string.dbsCN));
+            tvOCBC.setText(getString(R.string.ocbcCN));
+            tvUOB.setText(getString(R.string.uobCN));
             return true;
         }
 
@@ -70,18 +70,18 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        if(wordclicked.equalsIgnoreCase("dbs")){
+        if(wordclicked.equalsIgnoreCase(getString(R.string.dbsEN))){
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.dbs.com.sg"));
+                Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.dbsweb)));
                 startActivity(intentCall);
                 return true; //menu item successfully handled
             } else if(item.getItemId()==1) { //check if the selected menu item ID is 1
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+"18001111111"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse(getString(R.string.dbs_tel)));
                 startActivity(intentCall);
                 return true;  //menu item successfully handled
-            } else if (item.getItemId()==2) { //check if the selected menu item ID is 1
+            } else if (item.getItemId()==2) { //check if the selected menu item ID is 2
                 //code for action
                 if (tvDBS.getCurrentTextColor() == getResources().getColor(R.color.black)){
                     tvDBS.setTextColor(getResources().getColor(R.color.red));
@@ -90,18 +90,18 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;  //menu item successfully handled
             }
-        } else if (wordclicked.equalsIgnoreCase("ocbc")) {
+        } else if (wordclicked.equalsIgnoreCase(getString(R.string.ocbcEN))) {
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ocbc.com"));
+                Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.ocbcweb)));
                 startActivity(intentCall);
                 return true; //menu item successfully handled
             } else if(item.getItemId()==1) { //check if the selected menu item ID is 1
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+"18003633333"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse(getString(R.string.ocbc_tel)));
                 startActivity(intentCall);
                 return true;  //menu item successfully handled
-            } else if (item.getItemId()==2) { //check if the selected menu item ID is 1
+            } else if (item.getItemId()==2) { //check if the selected menu item ID is 2
                 //code for action
                 if (tvOCBC.getCurrentTextColor() == getResources().getColor(R.color.black)){
                     tvOCBC.setTextColor(getResources().getColor(R.color.red));
@@ -110,18 +110,18 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;  //menu item successfully handled
             }
-        } else if (wordclicked.equalsIgnoreCase("uob")) {
+        } else if (wordclicked.equalsIgnoreCase(getString(R.string.uobEN))) {
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.uob.com.sg"));
+                Intent intentCall = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.uobweb)));
                 startActivity(intentCall);
                 return true; //menu item successfully handled
             } else if(item.getItemId()==1) { //check if the selected menu item ID is 1
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+"18002222121"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse(getString(R.string.uob_tel)));
                 startActivity(intentCall);
                 return true;  //menu item successfully handled
-            } else if (item.getItemId()==2) { //check if the selected menu item ID is 1
+            } else if (item.getItemId()==2) { //check if the selected menu item ID is 2
                 //code for action
                 if (toggleFaveUOB){
                     tvUOB.setTextColor(getResources().getColor(R.color.red));

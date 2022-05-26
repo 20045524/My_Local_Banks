@@ -11,8 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/dbs"
+        android:text="@string/dbsEN"
         android:gravity="center"
+
         android:textColor="@color/black"/>
 
     <TextView
@@ -20,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/ocbc"
+        android:text="@string/ocbcEN"
         android:gravity="center"
         android:textColor="@color/black"/>
 
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/uob"
+        android:text="@string/uobEN"
         android:gravity="center"
         android:textColor="@color/black"/>
 
